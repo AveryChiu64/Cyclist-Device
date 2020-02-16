@@ -1,0 +1,3 @@
+[submodule "Sixfab_RP1_CellularIoT_Library"]
+	path = Sixfab_RP1_CellularIoT_Library
+	url = https://github.com/sixfab/Sixfab_RPi_CellularIoT_Library.git
