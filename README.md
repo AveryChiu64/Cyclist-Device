@@ -1,4 +1,4 @@
-# Cyclist-Device
+# Cyclus
 Cyclus is a project created to help provide cyclist and their bikes with safety and security for their daily commutes. Cyclus is 
 currently one small device created with an Arduno UNO, Raspberry Pi 4, and a TELUS Cat-M1 cellular shield. This bike has features to
 keep cyclist safe on the roads, especially for cyclist who commute often on busy roads. It also comes with features to help fight against
