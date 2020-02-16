@@ -81,17 +81,24 @@ def main():
     init_solace()
     prevX=0
     currX=0
+    client = mqtt.Client("python_publisher")
+    solace_topic_acceleration = "devices/acceleration/events"
     while(True):
-        time.sleep(0.1)
+        biking = False
+        xCoord = 43.669012
+        yCoord = -79.395596
+        time.sleep(0.5)
         currX=getAccelX()
         lightsOn(currX,prevX)
-        
+        #led_front.write(1)
         #In case of theft
-        if(prevX - currX > 1000):
+        if(prevX - currX > 300 and (not biking)):
             buzzer.write(1)
-            node.sendSMS(str(num),"Warning:Bike is being moved")
+            node.sendSMS(str(num),"Warning: Bike is being moved from position " + str(xCoord) +", " + str(yCoord))
+        elif biking:
+            publish(client, "acceleration in x dir", solace_topic_acceleration, 1, currX, 0)
+            
         prevX=currX
-        publish(client, "acceleration in x dir", solace_topic_acceleration, 1, currX, 0)
     
 if __name__=="__main__":
     main()
