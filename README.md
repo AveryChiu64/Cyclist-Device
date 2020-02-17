@@ -5,7 +5,7 @@ keep cyclist safe on the roads, especially for cyclist who commute often on busy
 theft and to track down bikes in case they get lost.
 
 # Current Features
-- Tracking Device with GPS (and to track down thieves in case your bike is ever stolen)
+- Tracking Device with GPS (and to track down thieves in case your bike is ever stolen
 - Headlights on the front and back, including strobe lights for emergency situations
 - An alarm that is toggled by a switch that will sound when someone tries to steal the bike
 
