@@ -13,4 +13,7 @@ theft and to track down bikes in case they get lost.
 - Web application to view all the data
 - Dashcam to record footage and automatically upload to cloud
 
+# Resources
+- Telus Shield and SixFabs Library
+- Solace Library 
 
